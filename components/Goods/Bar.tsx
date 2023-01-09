@@ -55,9 +55,9 @@ export const Bar = () => {
             // onClick={btnSortHandler}
           />
           <div className="options">
-            <a href="/">Cheaper</a>
-            <a href="/">Popular</a>
-            <a href="/">Best</a>
+            <a href="#">Cheaper</a>
+            <a href="#">Popular</a>
+            <a href="#">Best</a>
           </div>
         </div>
       </div>
