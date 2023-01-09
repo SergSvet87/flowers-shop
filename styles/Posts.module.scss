@@ -1,0 +1,92 @@
+@import "./variable";
+
+.posts {
+  padding: 60px 0;
+
+  &__list {
+    display  : flex;
+    flex-wrap: wrap;
+    gap      : 35px;
+  }
+}
+
+.post {
+  max-width       : 375px;
+  background-color: $c-white;
+  font-size       : 16px;
+  border-radius   : 5px;
+  padding         : 0;
+
+  &_header {
+    display        : flex;
+    align-items    : center;
+    justify-content: space-between;
+    padding        : 15px;
+  }
+
+  &_avatar {
+    display    : flex;
+    align-items: center;
+
+    img {
+      margin-right: 20px;
+    }
+  }
+
+  &_data {
+    color: $c-home-bg;
+  }
+}
+
+.post_image img {
+  width: 100%;
+}
+
+.post_description h6 {
+  padding-top : 16.91px;
+  padding-left: 10px;
+  font-size   : 20px;
+  font-weight : 400;
+}
+
+.post_description p {
+  padding-top   : 5px;
+  padding-left  : 10px;
+  padding-bottom: 20px;
+  color         : $c-home-bg;
+  line-height   : 25px;
+  font-size     : 16px;
+}
+
+.post_footer div {
+  text-align: left;
+  font-size : 12px;
+  color     : $c-home-bg;
+}
+
+.post_footer button {
+  background-color: $c-white;
+  border          : none;
+  font-size       : 18px;
+  font-weight     : 400;
+  float           : right;
+  padding-right   : 25px;
+  padding-bottom  : 15px;
+}
+
+.post_footer .icons {
+  word-spacing: 1em;
+  margin-top  : 5px;
+  padding-left: 27px;
+}
+
+.icons .eye {
+  position: relative;
+  left    : 15px;
+  bottom  : 1px;
+}
+
+.icons .hurt {
+  position: relative;
+  bottom  : 1px;
+}

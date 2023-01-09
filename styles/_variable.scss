@@ -1,0 +1,72 @@
+/*---------------------
+  Variables
+-----------------------*/
+
+// Размеры контейнера
+$wrap: 1440px;
+$container: 1230px;
+$mc: 0 auto;
+
+// Размеры медиазапросов
+/* Medium Device = 1200px */
+$mq_xl: 1199.99px;
+
+/* Tablet Device = 768px */
+$mq_lg: 991.99px;
+
+/* Wide Mobile = 580px */
+$mq_md: 767.99px;
+
+/* Wide Mobile = 480px */
+$mq_sm: 575.99px;
+
+/* Small Device = 320px */
+$mq_xs: 478.99px;
+
+/* Small Device = 280px */
+$mq_xxs: 319.99px;
+
+// Шрифты
+$ff-roboto: "Roboto", sans-serif;
+$ff-inter: "Inter", sans-serif;
+
+// Текст
+$fs-text: 18px;
+$fs-h1: 60px;
+$fs-h2: 32px;
+$fs-h3: 0px;
+$fs-h4: 0px;
+$fs-h5: 22px;
+$fs-h6: 20px;
+
+// Цвет
+$c-primary: #ff8f52;
+$c-home-bg: #838383;
+$c-white: #ffffff;
+$c-line: #d9d9d9;
+$c-black: #000000;
+$c-text: #121212;
+$c-footer-bg: #454545;
+$c-background: #f2f2f2;
+
+// Прозрачность
+$tabs-opacity: rgba(51, 51, 51, 0.2);
+$white-opacity: rgba(255, 255, 255, 0.5);
+$black-opacity: rgba(0, 0, 0, 0.5);
+$gray-opacity: rgba(51, 51, 51, 0.5);
+
+// Границы
+$radius: 10px;
+$radius-primary: 5px;
+
+// Bootstrap
+// $modal-backdrop-bg: #0a1630;
+// $modal-backdrop-opacity: .9;
+
+// flex
+@mixin flex($jc, $ai) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: $jc;
+  align-items: $ai;
+}

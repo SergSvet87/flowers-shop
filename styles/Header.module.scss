@@ -1,0 +1,89 @@
+/*---------------------
+  Header Desktop
+-----------------------*/
+@import "./variable";
+
+.header {
+  background-color: $c-white;
+
+  &__menu-mobile {
+    display: none;
+  }
+
+  &__container {
+    @include flex(space-between, center);
+    flex-wrap: nowrap;
+  }
+
+  &__logo {
+    font-weight: 500;
+    font-size  : 32px;
+    line-height: 1.19;
+
+    span {
+      color: $c-primary;
+    }
+  }
+
+  &__profile {
+    display    : inline-flex;
+    align-items: center;
+  }
+}
+
+.menu_header {
+  min-width: 300px;
+
+  &__list {
+    @include flex(space-between, center);
+    list-style  : none;
+    padding-left: 0;
+    margin      : 0;
+  }
+
+  &__item {
+    padding      : 30px 0;
+    font-size    : 20px;
+    border-bottom: 4px solid transparent;
+    transition   : border-bottom 0.2s ease;
+
+    &:hover {
+      color        : $c-primary;
+      border-bottom: 4px solid $c-primary;
+    }
+
+    &.active {
+      color: $c-primary;
+    }
+  }
+}
+
+.profile {
+  &__auth {
+    &-button {
+      text-transform: uppercase;
+
+      &:hover {
+        box-shadow: 0px 3px 0px 0px rgba($color: $c-primary, $alpha: 0.3);
+      }
+    }
+  }
+
+  &__auth-button:first-child {
+    margin-right: 20px;
+  }
+
+  &__cart {
+    cursor: pointer;
+  }
+
+  &__avatar {
+    margin-right: 30px;
+    cursor      : pointer;
+
+    img {
+      overflow: hidden;
+      cursor  : pointer;
+    }
+  }
+}

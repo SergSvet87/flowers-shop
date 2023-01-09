@@ -1,0 +1,43 @@
+@import "./variable";
+
+.main_title_container {
+  padding-top: 73px;
+  padding-bottom: 14px;
+  display: flex;
+}
+
+.main_title_h2 {
+  padding-bottom: 57px;
+  font-size: 60px;
+  font-weight: 400;
+}
+
+.main_title_p {
+  color: $c-home-bg;
+  padding-bottom: 51px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.browse_btn {
+  background-color: $c-primary;
+  color: $c-white;
+  border-radius: 5px;
+  border: none;
+  width: 104px;
+  height: 40px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.main_title_img {
+  max-width: 636px;
+  display: flex;
+  flex-wrap: wrap;
+  // margin-left: auto;
+
+  img {
+    flex: 0 0;
+    padding: 0 0 20px 20px;
+  }
+}

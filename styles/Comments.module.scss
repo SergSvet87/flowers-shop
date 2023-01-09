@@ -1,0 +1,57 @@
+@import './variable';
+
+.comments {
+  padding: 60px 0;
+
+  &__list {
+    display  : flex;
+    flex-wrap: wrap;
+    gap      : 25px;
+  }
+
+  &__review {
+    width: 380px;
+    @include flex(flex-start, flex-start);
+    gap             : 17px;
+    flex-wrap       : nowrap;
+    padding         : 20px 30px;
+    background-color: $c-white;
+  }
+
+  &__description {
+    width         : 250px;
+    display       : flex;
+    flex-direction: column;
+
+    h5 {
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-family  : $ff-inter;
+      color        : $c-home-bg;
+      margin-bottom: 15px;
+      flex: 1 1 auto;
+    }
+
+    // div {
+    //   flex: 1 1 auto;
+    // }
+  }
+
+  &__rating {
+
+    button {
+      background: transparent;
+      border    : none;
+      outline   : none;
+      cursor    : pointer;
+
+      img {
+        width       : 28px;
+        height      : 28px;
+        margin-right: 10px;
+      }
+    }
+  }
+}

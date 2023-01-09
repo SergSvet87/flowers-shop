@@ -1,0 +1,75 @@
+@import "./variable";
+
+.footer {
+  margin-top      : 40px;
+  background-color: $c-footer-bg;
+  padding         : 55px 0;
+  color           : $c-white;
+  font-size       : $fs-text;
+
+  &__wrapper {
+    @include flex(space-between, flex-start);
+  }
+
+  &__about {
+    width: 380px;
+  }
+
+  &__logo {
+    font-weight  : 500;
+    font-size    : 32px;
+    line-height  : 1.19;
+    margin-bottom: 15px;
+
+    span {
+      color: $c-primary;
+    }
+  }
+
+  &__description {
+    color      : $c-line;
+    font-size  : $fs-text;
+    line-height: 1.7;
+  }
+
+  .title_h6 {
+    margin-bottom: 20px;
+  }
+
+  &__item {
+    margin-bottom: 10px;
+    color        : $c-line;
+
+    &:hover {
+      color: $c-primary;
+    }
+  }
+
+  &__contacts {
+    width: 340px;
+  }
+
+  &__item-link {
+    @include flex(flex-start, center);
+  }
+}
+
+.contacts_footer {
+  &__item {
+    margin-bottom: 30px;
+    color        : $c-line;
+
+    img {
+      display     : inline-flex;
+      margin-right: 10px;
+    }
+
+    address {
+      display: inline-block;
+    }
+
+    &:hover {
+      color: $c-primary;
+    }
+  }
+}

@@ -1,0 +1,199 @@
+@import "./variable";
+
+.flower_info {
+  padding: 50px 0;
+
+  &__wrapper {
+    @include flex(space-between, flex-start);
+    padding         : 50px 40px 50px 50px;
+    background-color: $c-white;
+    border-radius   : $radius-primary;
+    margin-bottom   : 40px;
+  }
+
+  &__service {
+    @include flex(space-between, flex-start);
+  }
+
+  &__img {
+    max-width : 356px;
+    object-fit: cover;
+  }
+
+  &__description {
+    max-width: 695px;
+
+    h6 {
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-bottom: 35px;
+      color        : $c-home-bg;
+      font-size    : 22px;
+    }
+  }
+
+  &__rating {
+    margin-bottom: 55px;
+  }
+
+  &__price {
+    @include flex(space-between, center);
+  }
+
+  &__reviews,
+  &__liked {
+    width           : 580px;
+    min-height      : 560px;
+    padding         : 25px 40px;
+    background-color: $c-white;
+    border-radius   : $radius-primary;
+  }
+}
+
+.rating_flower {
+  &__stars {
+    font-size: 22px;
+
+    img {
+      margin-right: 10px;
+    }
+  }
+
+  &__count {
+    color: $c-home-bg;
+  }
+}
+
+.price_flower {
+  &__price {
+    font-size: 22px;
+  }
+
+  &__buttons {
+    @include flex(center, center);
+  }
+
+  &__favorite {
+    position: relative;
+    @include flex(space-between, center);
+    border       : 1px solid $c-primary;
+    border-radius: $radius-primary;
+    margin-right : 10px;
+
+    .button_add {
+      background : transparent;
+      color      : $c-primary;
+      margin-left: 20px;
+    }
+
+    &:hover {
+      box-shadow: 2px 4px 5px 8px rgba($color: $c-primary, $alpha: 0.3);
+    }
+  }
+
+  &__cart {
+    position: relative;
+    @include flex(space-between, center);
+    border-radius   : $radius-primary;
+    margin-right    : 10px;
+    background-color: $c-primary;
+
+    .button_add {
+      margin-left: 20px;
+    }
+
+    &:hover {
+      box-shadow: 2px 4px 5px 8px rgba($color: $c-primary, $alpha: 0.3);
+    }
+  }
+}
+
+.liked_flower {
+  h5 {
+    font-weight  : normal;
+    margin-bottom: 20px;
+  }
+
+  &__list {
+    @include flex(space-between, center);
+    gap: 20px;
+  }
+}
+
+.reviews_flower {
+  &__title {
+    @include flex(space-between, center);
+    margin-bottom: 30px;
+  }
+
+  &__review {
+    @include flex(flex-start, flex-start);
+    margin-bottom: 35px;
+  }
+
+  &__button {
+    font-family: $ff-inter;
+    font-size  : 22px;
+
+    &:hover {
+      box-shadow: 0px 3px 0px 0px rgba($color: $c-primary, $alpha: 0.3);
+    }
+  }
+}
+
+.review {
+  &__avatar {
+    width        : 77px;
+    height       : 77px;
+    margin-right : 25px;
+    object-fit   : cover;
+    border-radius: 50%;
+  }
+
+  &__description {
+    width: 390px;
+
+    h5 {
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-family  : $ff-inter;
+      color        : $c-home-bg;
+      margin-bottom: 15px;
+    }
+
+    button {
+      background: transparent;
+      border    : none;
+      outline   : none;
+      cursor    : pointer;
+    }
+
+    img {
+      width       : 20px;
+      height      : 18px;
+      margin-right: 5px;
+    }
+  }
+}
+
+.button_add {
+  width        : 163px;
+  height       : 40px;
+  background   : $c-primary;
+  font-size    : $fs-text;
+  color        : $c-white;
+  border-radius: $radius-primary;
+  border       : none;
+  outline      : none;
+  cursor       : pointer;
+
+  img {
+    position: absolute;
+    left    : 15px;
+    top     : 11px;
+  }
+}

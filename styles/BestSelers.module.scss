@@ -1,0 +1,57 @@
+@import "./variable";
+
+.best_sellers {
+  padding: 60px 0;
+
+  &__list {
+    display  : flex;
+    flex-wrap: wrap;
+    gap      : 25px;
+  }
+
+  &__item {
+    width           : 280px;
+    padding         : 17px;
+    background-color: $c-white;
+
+    &_img {
+      width        : 100%;
+      height       : 230px;
+      object-fit   : cover;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      font-family  : 'Roboto';
+      font-style   : normal;
+      font-weight  : 400;
+      font-size    : 22px;
+      line-height  : 26px;
+      color        : $c-black;
+      margin-bottom: 40px;
+    }
+
+    p {
+      color: $gray-opacity;
+    }
+  }
+
+  &__footer {
+    @include flex(space-between, center);
+  }
+
+  &__btn {
+    @include flex(center, center);
+    // padding: 5px;
+
+    &_img {
+      width       : 22px;
+      height      : 19px;
+      margin-right: 10px;
+    }
+
+    &:hover {
+      box-shadow: 0px 3px 0px 0px rgba($color: $c-primary, $alpha: 0.3);
+    }
+  }
+}

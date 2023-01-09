@@ -1,0 +1,97 @@
+@import "../../../_variable.scss";
+
+
+.filterNav {
+    position: fixed;
+    visibility: hidden;
+    z-index: 99;
+    top: 0;
+    left: -100vw;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: left 0.4s ease;
+    
+    
+    &__content {
+        width: 30vw;
+        position: fixed;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        bottom: 0;
+        background-color: $c-white;
+        height: 100%;
+
+    }
+
+    
+    &__body {
+        padding: 2vh 3vw;
+    }
+    
+    h4,
+    h2 {
+        padding-top: 1vh;
+        color: $c-primary;
+        cursor:default;
+    }
+
+    .head {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        background-color: $c-white;
+        position: sticky;
+        top: 0;
+        border-bottom: 1px solid $c-line;
+
+
+        .close {
+            position: absolute;
+            bottom: 0;
+            right: 15px;
+            color: $c-primary;
+            font-size: 50px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        
+            &:hover,
+            &:focus {
+                color: $c-black;
+                text-decoration: none;
+                cursor: pointer;
+            }
+        }
+    }
+    
+    .applyBlock{
+        padding: 0 2vw 2vh;
+        background-color: $c-white;
+        position: sticky;
+        left: 0;
+        bottom: 0;
+        
+        
+        .apply {
+            font-size: $fs-h2;
+            color: $c-white;
+            background-color: $c-primary;
+            border-radius: $radius-primary;
+            width: 26vw;
+            padding: 5px;
+            border: solid 1px;
+            outline: none;
+            transition: background-color 0.2s ease, color 0.2s ease, border 0.2s ease;
+            
+    
+            &:hover,
+            &:active {
+                background-color: $c-white;
+                color: $c-primary;
+                border-color: $c-primary;
+            }
+        }
+    }
+
+}
